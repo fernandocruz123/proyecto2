@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado - Contacto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <!-- Contenedor principal del encabezado -->
+        <div class="header-container">
+            <!-- Contenedor para el logo -->
+            <div class="logo-container">
+                <img src="./logo.jpg" alt="Logo Supermercado" class="logo">
+            </div>
+    
+            <!-- Contenedor para el texto del encabezado y el eslogan -->
+            <div class="header-text">
+                <h1>SUPERMERCADO EL CASERO</h1>
+                <h3>Estamos Para Ayudarte</h3>
+            </div>
+        </div>
+    
+        <!-- Barra de navegación -->
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <main>
+        <!-- Sección de contenido principal -->
+        <section class="marquee-container">
+            <!-- Marquee para texto destacado -->
+            <div class="marquee">
+                <h1>¡Todo lo que Necesitas!</h1>
+            </div>
+            
+            <!-- Marquee para galería de imágenes -->
+            <div class="marquee">
+                <div class="image-gallery">
+                    <img src="./frutas.jfif" alt="frutas">
+                    <img src="./lacteos.jpg" alt="lácteos">
+                    <img src="./VERDURAS.jpg" alt="verduras">
+                    <img src="./refrescos.jfif" alt="refrescos">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de formularios -->
+        <section class="form-container">
+            <!-- Contenedor para ambos formularios -->
+            <div class="form-wrapper">
+                <!-- Formulario de selección de productos -->
+                <div class="form-section">
+                    <h2>Selección de Productos</h2>
+                    <form>
+                        <p>
+                            <label for="frutas">Selecciona Frutas:</label><br>
+                            <select id="frutas" name="frutas">
+                                <option value="">Selecciona una opción</option>
+                                <option value="manzanas">Manzanas</option>
+                                <option value="bananas">Bananas</option>
+                                <option value="naranjas">Naranjas</option>
+                                <option value="uvas">Uvas</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="vegetales">Selecciona Vegetales:</label><br>
+                            <select id="vegetales" name="vegetales">
+                                <option value="">Selecciona una opción</option>
+                                <option value="zanahorias">Zanahorias</option>
+                                <option value="brocoli">Brócoli</option>
+                                <option value="espinacas">Espinacas</option>
+                                <option value="papas">Papas</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="lacteos">Selecciona Lácteos:</label><br>
+                            <select id="lacteos" name="lacteos">
+                                <option value="">Selecciona una opción</option>
+                                <option value="leche">Leche</option>
+                                <option value="yogurt">Yogurt</option>
+                                <option value="queso">Queso</option>
+                                <option value="mantequilla">Mantequilla</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="bebidas">Selecciona Bebidas:</label><br>
+                            <select id="bebidas" name="bebidas">
+                                <option value="">Selecciona una opción</option>
+                                <option value="agua">Agua</option>
+                                <option value="jugos">Jugos</option>
+                                <option value="refrescos">Refrescos</option>
+                                <option value="bebidas-energeticas">Bebidas Energéticas</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="comentarios">Comentarios Adicionales:</label><br>
+                            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="Enviar">
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Formulario de contacto -->
+                <div class="form-section">
+                    <h2>Formulario de Contacto</h2>
+                    <form>
+                        <p>
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </p>
+                        <p>
+                            <label for="email">Correo Electrónico:</label><br>
+                            <input type="email" id="email" name="email" required>
+                        </p>
+                        <p>
+                            <label for="telefono">Teléfono:</label><br>
+                            <input type="tel" id="telefono" name="telefono">
+                        </p>
+                        <p>
+                            <label for="lugar-entrega">Lugar de Entrega:</label><br>
+                            <select id="lugar-entrega" name="lugar-entrega">
+                                <option value="">Selecciona una opción</option>
+                                <option value="domicilio">Domicilio</option>
+                                <option value="oficina">Oficina</option>
+                                <option value="punto-recolecta">Punto de Recolecta</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="fecha">Fecha de Entrega Preferida:</label><br>
+                            <input type="date" id="fecha" name="fecha">
+                        </p>
+                        <p>
+                            <label for="comentarios">Comentarios Adicionales:</label><br>
+                            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="Enviar"> 
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Diseñado Por Fernando Cruz Cruz</p>
+    </footer>
+</body>
+</html>
